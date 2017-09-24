@@ -1,5 +1,7 @@
 # Docker Service Frontail
 
+[![Build Status](https://travis-ci.org/feramhq/docker-service-frontail.svg?branch=master)](https://travis-ci.org/feramhq/docker-service-frontail)
+
 Feed frontail with your Docker Swarm logs and post-process with Bunyan
 
 
