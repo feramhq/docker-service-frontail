@@ -22,6 +22,16 @@ services:
       - 9001:9001
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    deploy:
+      mode: global
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          memory: 200M
+        reservations:
+          memory: 80M
 ```
 
 Deploy the above `docker-compose.yaml` file with:
