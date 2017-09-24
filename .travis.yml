@@ -16,7 +16,7 @@ install: true
 script:
   # Build
   - docker build . -t feramhq/docker-service-frontail:latest
-  - docker tag feramhq/docker-service-frontail:latest "feramhq/docker-service:$(git describe --always)"
+  - docker tag feramhq/docker-service-frontail:latest "feramhq/docker-service-frontail:$(git describe --always)"
 
   # Push to hub.docker.com
   - docker login -u feramhq -p "$DOCKER_HUB_PASSWORD"
